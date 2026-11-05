@@ -1,0 +1,26 @@
+===== BC MODEL =====
+loaded checkpoints\best.pt (epoch/eval_succ 80)
+  seen top-left      succ 1/18 (6%)  region-hit 11/18 (61%)  final-dist 0.088
+  seen top-right     succ 5/18 (28%)  region-hit 16/18 (89%)  final-dist 0.067
+  seen bottom-left   succ 0/18 (0%)  region-hit 18/18 (100%)  final-dist 0.073
+  seen bottom-right  succ 0/18 (0%)  region-hit 15/18 (83%)  final-dist 0.079
+  unseen top-left   succ 1/12 (8%)  region-hit 6/12 (50%)  final-dist 0.103
+  unseen top-right  succ 0/12 (0%)  region-hit 12/12 (100%)  final-dist 0.074
+  unseen bottom-left succ 1/12 (8%)  region-hit 10/12 (83%)  final-dist 0.081
+  unseen bottom-right succ 1/12 (8%)  region-hit 11/12 (92%)  final-dist 0.069
+  random         succ 0/72 (0%)  region-hit 64/72 (89%)  final-dist 0.074
+  oracle         succ 52/72 (72%)  region-hit 71/72 (99%)  final-dist 0.049
+saved -> results/eval_summary.npy
+===== FINETUNED MODEL =====
+loaded checkpoints\finetuned.pt (epoch/eval_succ 0.35)
+  seen top-left      succ 5/18 (28%)  region-hit 16/18 (89%)  final-dist 0.064
+  seen top-right     succ 7/18 (39%)  region-hit 18/18 (100%)  final-dist 0.064
+  seen bottom-left   succ 1/18 (6%)  region-hit 10/18 (56%)  final-dist 0.089
+  seen bottom-right  succ 3/18 (17%)  region-hit 12/18 (67%)  final-dist 0.085
+  unseen top-left   succ 3/12 (25%)  region-hit 12/12 (100%)  final-dist 0.063
+  unseen top-right  succ 3/12 (25%)  region-hit 12/12 (100%)  final-dist 0.073
+  unseen bottom-left succ 0/12 (0%)  region-hit 8/12 (67%)  final-dist 0.080
+  unseen bottom-right succ 5/12 (42%)  region-hit 11/12 (92%)  final-dist 0.061
+  random         succ 0/72 (0%)  region-hit 64/72 (89%)  final-dist 0.073
+  oracle         succ 52/72 (72%)  region-hit 71/72 (99%)  final-dist 0.049
+saved -> results/eval_summary.npy
